@@ -3,9 +3,9 @@ import './style.css';
 
 const { useRef } = React;
 
-import { Timer, TimerHandle } from './Timer';
+import { Stopwatch, StopwatchHandle } from './Stopwatch';
 export default function App() {
-  const timerRef = useRef<TimerHandle>(null);
+  const timerRef = useRef<StopwatchHandle>(null);
 
   return (
     <div>
@@ -36,7 +36,7 @@ export default function App() {
         </button>
       </div>
 
-      <Timer ref={timerRef} />
+      <Stopwatch ref={timerRef} />
     </div>
   );
 }
