@@ -43,7 +43,7 @@ export default function App() {
           </button>
         </div>
 
-        <Stopwatch ref={timerRef} />
+        <Stopwatch ref={timerRef} defaultRunningStatus={false} />
       </div>
     </div>
   );
