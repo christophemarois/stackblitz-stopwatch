@@ -86,9 +86,11 @@ export const Stopwatch = forwardRef<StopwatchHandle, StopwatchProps>(
           padding: 8,
         }}
       >
-        <pre style={{ marginTop: 0 }}>
+        <code style={{ background: '#ccc' }}>&lt;Stopwatch/&gt;</code>
+
+        <div style={{ margin: '8px 0' }}>
           Current value: {val}. Status: {isRunning ? 'running' : 'not running'}
-        </pre>
+        </div>
 
         <button onClick={() => handleRef.current.set((x) => x + 10)}>
           Add 10 from inside
